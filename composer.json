@@ -1,0 +1,19 @@
+{
+    "name": "giancheconi/littletiger",
+    "description": "Projeto da aula de programação para internet do curso de GTI da Fatec Jaú - 4º Semestre",
+    "type": "project",
+    "license": "MIT",
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Gian Luca de Almeida Checoni",
+            "email": "gian.checoni@fatec.sp.gov.br"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {}
+}
