@@ -1,0 +1,1095 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/* Fiz um arquivo exclusivo para o nav
+por ser uma parte muito repetitiva, iria
+tonar dificil o entendimento do outro arquivo */
+.nav-bg, .nav-container, nav, ul, li {
+  overflow: visible !important;
+}
+
+.nav-bg {
+    background: #FFA7E2;
+}
+
+.nav-container {
+    max-width: 1160px;
+    min-height: 80px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
+    margin: 0 auto;
+    font-weight: 700;
+    font-family: "Nunito", sans-serif;
+    font-size: 20px;
+    align-items: center;
+}
+
+.dropdown-papelaria ul li a {
+    color: #290019;
+    display: block;
+    padding: 10px 20px;
+    background: #FAFAFA;
+    font-size: 16px;
+}
+ /* Simbolo de dropdown dos menus */
+.papelaria ul li i {
+    color: #290019;
+    margin-left: 6px;
+    font-size: 15px;
+}
+
+.casa ul li i {
+    color: #290019;
+    margin-left: 6px;
+    font-size: 15px;
+}
+
+.kits ul li i {
+    color: #290019;
+    margin-left: 6px;
+    font-size: 15px;
+}
+
+.personalizados ul li i {
+    color: #290019;
+    margin-left: 6px;
+    font-size: 15px;
+}
+
+.impressao ul li i {
+    color: #290019;
+    margin-left: 6px;
+    font-size: 15px;
+}
+
+/* Configuração do conteúdo 1° dropdown */
+a img {
+    display: inline;
+    margin-left: 6px;
+    width: 11px;
+    height: 11px;
+}
+
+.dropdown-papelaria {
+    position: absolute;
+    display: none;
+    background: #FAFAFA;
+    font-family: "Nunito", sans-serif;
+}
+
+.papelaria:hover .dropdown-papelaria {
+    display: block;
+}
+
+.dropdown-papelaria ul li a:hover {
+    background: #FFCCEE;
+}
+
+.dropdown-casa {
+    position: absolute;
+    display: none;
+    background: #FAFAFA;
+    font-family: "Nunito", sans-serif;
+}
+
+.dropdown-casa ul li a {
+    color: #290019;
+    display: block;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+.casa a img {
+    display: inline;
+    margin-left: 6px;
+    width: 11px;
+    height: 11px;
+}
+
+.casa:hover .dropdown-casa {
+    display: block;
+}
+
+.dropdown-kits {
+    position: absolute;
+    display: none;
+    background: #FAFAFA;
+    font-family: "Nunito", sans-serif;
+}
+
+.dropdown-kits ul li a {
+    color: #290019;
+    display: block;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+.kits a img {
+    display: inline;
+    margin-left: 6px;
+    width: 11px;
+    height: 11px;
+}
+
+.kits:hover .dropdown-kits {
+    display: block;
+}
+
+.dropdown-personalizados {
+    position: absolute;
+    display: none;
+    background: #FAFAFA;
+    font-family: "Nunito", sans-serif;
+}
+
+.dropdown-personalizados ul li a {
+    color: #290019;
+    display: block;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+.personalizados a img {
+    display: inline;
+    margin-left: 6px;
+    width: 11px;
+    height: 11px;
+}
+
+.personalizados:hover .dropdown-personalizados {
+    display: block;
+}
+
+.dropdown-impressao {
+    position: absolute;
+    display: none;
+    background: #FAFAFA;
+    font-family: "Nunito", sans-serif;
+    z-index: 1000;
+}
+
+.dropdown-impressao ul li a {
+    color: #290019;
+    display: block;
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+.impressao a img {
+    display: inline;
+    margin-left: 6px;
+    width: 11px;
+    height: 11px;
+}
+
+.impressao:hover .dropdown-impressao {
+    display: block;
+}
+
+
+/* Daqui pra baixo é um código repetitivo
+para arrumar os dropdowns e subdrops */
+
+/* 2° Dropdown = Subdrop */
+
+/* Tudo que estiver na lista de subdrop
+não aparecerá até o hover */
+.subdrop-cadernos {
+    display: none;
+}
+
+/* Estilizando o texto do subdrop */
+.subdrop-cadernos ul li a {
+    background: #FFCCEE;
+    color: #841C5C;
+    display: block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: "Nunito", sans-serif;
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+/* Estilizando o título do subdrop */
+.subdrop-cadernos ul li h1 {
+    background: #FFCCEE;
+    color: #290019;
+    display: block;
+    padding: 10px 20px;
+    font-size: 28px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.cadernos:hover .subdrop-cadernos {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 100%;
+}
+
+.subdrop-canetas {
+    display: none;
+}
+
+.subdrop-canetas ul li a {
+    background: #FFCCEE;
+    color: #841C5C;
+    display: block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: "Nunito", sans-serif;
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+.subdrop-canetas ul li h1 {
+    background: #FFCCEE;
+    color: #290019;
+    display: block;
+    padding: 10px 20px;
+    font-size: 28px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.canetas:hover .subdrop-canetas {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 100%;
+}
+
+.subdrop-pastas {
+    display: none;
+}
+
+.subdrop-pastas ul li a {
+    background: #FFCCEE;
+    color: #841C5C;
+    display: block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: "Nunito", sans-serif;
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+.subdrop-pastas ul li h1 {
+    background: #FFCCEE;
+    color: #290019;
+    display: block;
+    padding: 10px 20px;
+    font-size: 28px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.pastas:hover .subdrop-pastas {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 100%;
+}
+
+.subdrop-mochilas {
+    display: none;
+}
+
+.subdrop-mochilas ul li a {
+    background: #FFCCEE;
+    color: #841C5C;
+    display: block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: "Nunito", sans-serif;
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+.subdrop-mochilas ul li h1 {
+    background: #FFCCEE;
+    color: #290019;
+    display: block;
+    padding: 10px 20px;
+    font-size: 28px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.mochilas:hover .subdrop-mochilas {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 100%;
+}
+
+.subdrop-estojos {
+    display: none;
+}
+
+.subdrop-estojos ul li a {
+    background: #FFCCEE;
+    color: #841C5C;
+    display: block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: "Nunito", sans-serif;
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+.subdrop-estojos ul li h1 {
+    background: #FFCCEE;
+    color: #290019;
+    display: block;
+    padding: 10px 20px;
+    font-size: 28px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.estojos:hover .subdrop-estojos {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 100%;
+}
+
+.subdrop-borrachas {
+    display: none;
+}
+
+.subdrop-borrachas ul li a {
+    background: #FFCCEE;
+    color: #841C5C;
+    display: block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: "Nunito", sans-serif;
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+.subdrop-borrachas ul li h1 {
+    background: #FFCCEE;
+    color: #290019;
+    display: block;
+    padding: 10px 20px;
+    font-size: 28px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.borrachas:hover .subdrop-borrachas {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 100%;
+}
+
+.subdrop-apontadores {
+    display: none;
+}
+
+.subdrop-apontadores ul li a {
+    background: #FFCCEE;
+    color: #841C5C;
+    display: block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: "Nunito", sans-serif;
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+.subdrop-apontadores ul li h1 {
+    background: #FFCCEE;
+    color: #290019;
+    display: block;
+    padding: 10px 20px;
+    font-size: 28px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.apontadores:hover .subdrop-apontadores {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 100%;
+}
+
+.subdrop-lapiseiras {
+    display: none;
+}
+
+.subdrop-lapiseiras ul li a {
+    background: #FFCCEE;
+    color: #841C5C;
+    display: block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: "Nunito", sans-serif;
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+.subdrop-lapiseiras ul li h1 {
+    background: #FFCCEE;
+    color: #290019;
+    display: block;
+    padding: 10px 20px;
+    font-size: 28px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.lapiseiras:hover .subdrop-lapiseiras {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 100%;
+}
+
+.subdrop-tesouras {
+    display: none;
+}
+
+.subdrop-tesouras ul li a {
+    background: #FFCCEE;
+    color: #841C5C;
+    display: block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: "Nunito", sans-serif;
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+.subdrop-tesouras ul li h1 {
+    background: #FFCCEE;
+    color: #290019;
+    display: block;
+    padding: 10px 20px;
+    font-size: 28px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.tesouras:hover .subdrop-tesouras {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 100%;
+}
+
+.subdrop-marcatextos {
+    display: none;
+}
+
+.subdrop-marcatextos ul li a {
+    background: #FFCCEE;
+    color: #841C5C;
+    display: block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: "Nunito", sans-serif;
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+.subdrop-marcatextos ul li h1 {
+    background: #FFCCEE;
+    color: #290019;
+    display: block;
+    padding: 10px 20px;
+    font-size: 28px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.marcatextos:hover .subdrop-marcatextos {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 100%;
+}
+
+.subdrop-planners {
+    display: none;
+}
+
+.subdrop-planners ul li a {
+    background: #FFCCEE;
+    color: #841C5C;
+    display: block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: "Nunito", sans-serif;
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+.subdrop-planners ul li h1 {
+    background: #FFCCEE;
+    color: #290019;
+    display: block;
+    padding: 10px 20px;
+    font-size: 28px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.planners:hover .subdrop-planners {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 100%;
+}
+
+.subdrop-agendas {
+    display: none;
+}
+
+.subdrop-agendas ul li a {
+    background: #FFCCEE;
+    color: #841C5C;
+    display: block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: "Nunito", sans-serif;
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+.subdrop-agendas ul li h1 {
+    background: #FFCCEE;
+    color: #290019;
+    display: block;
+    padding: 10px 20px;
+    font-size: 28px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.agendas:hover .subdrop-agendas {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 100%;
+}
+
+.subdrop-postits {
+    display: none;
+}
+
+.subdrop-postits ul li a {
+    background: #FFCCEE;
+    color: #841C5C;
+    display: block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: "Nunito", sans-serif;
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+.subdrop-postits ul li h1 {
+    background: #FFCCEE;
+    color: #290019;
+    display: block;
+    padding: 10px 20px;
+    font-size: 28px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.postits:hover .subdrop-postits {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 100%;
+}
+
+.subdrop-canetinhas {
+    display: none;
+}
+
+.subdrop-canetinhas ul li a {
+    background: #FFCCEE;
+    color: #841C5C;
+    display: block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: "Nunito", sans-serif;
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+.subdrop-canetinhas ul li h1 {
+    background: #FFCCEE;
+    color: #290019;
+    display: block;
+    padding: 10px 20px;
+    font-size: 28px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.canetinhas:hover .subdrop-canetinhas {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 100%;
+}
+
+.subdrop-reguas {
+    display: none;
+}
+
+.subdrop-reguas ul li a {
+    background: #FFCCEE;
+    color: #841C5C;
+    display: block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: "Nunito", sans-serif;
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+.subdrop-reguas ul li h1 {
+    background: #FFCCEE;
+    color: #290019;
+    display: block;
+    padding: 10px 20px;
+    font-size: 28px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.reguas:hover .subdrop-reguas {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 100%;
+}
+
+.subdrop-vasos {
+    display: none;
+}
+
+.subdrop-vasos ul li a {
+    background: #FFCCEE;
+    color: #841C5C;
+    display: block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: "Nunito", sans-serif;
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+.subdrop-vasos ul li h1 {
+    background: #FFCCEE;
+    color: #290019;
+    display: block;
+    padding: 10px 20px;
+    font-size: 28px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.vasos:hover .subdrop-vasos {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 100%;
+}
+
+.subdrop-decoracao {
+    display: none;
+}
+
+.subdrop-decoracao ul li a {
+    background: #FFCCEE;
+    color: #841C5C;
+    display: block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: "Nunito", sans-serif;
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+.subdrop-decoracao ul li h1 {
+    background: #FFCCEE;
+    color: #290019;
+    display: block;
+    padding: 10px 20px;
+    font-size: 28px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.decoracao:hover .subdrop-decoracao {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 100%;
+}
+
+.subdrop-portacanetas {
+    display: none;
+}
+
+.subdrop-portacanetas ul li a {
+    background: #FFCCEE;
+    color: #841C5C;
+    display: block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: "Nunito", sans-serif;
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+.subdrop-portacanetas ul li h1 {
+    background: #FFCCEE;
+    color: #290019;
+    display: block;
+    padding: 10px 20px;
+    font-size: 28px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.portacanetas:hover .subdrop-portacanetas {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 100%;
+}
+
+.subdrop-kitlapis {
+    display: none;
+}
+
+.subdrop-kitlapis ul li a {
+    background: #FFCCEE;
+    color: #841C5C;
+    display: block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: "Nunito", sans-serif;
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+.subdrop-kitlapis ul li h1 {
+    background: #FFCCEE;
+    color: #290019;
+    display: block;
+    padding: 10px 20px;
+    font-size: 28px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.kitlapis:hover .subdrop-kitlapis {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 100%;
+}
+
+.subdrop-kitmarcador {
+    display: none;
+}
+
+.subdrop-kitmarcador ul li a {
+    background: #FFCCEE;
+    color: #841C5C;
+    display: block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: "Nunito", sans-serif;
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+.subdrop-kitmarcador ul li h1 {
+    background: #FFCCEE;
+    color: #290019;
+    display: block;
+    padding: 10px 20px;
+    font-size: 28px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.kitmarcador:hover .subdrop-kitmarcador {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 100%;
+}
+
+.subdrop-kitanotacao {
+    display: none;
+}
+
+.subdrop-kitanotacao ul li a {
+    background: #FFCCEE;
+    color: #841C5C;
+    display: block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: "Nunito", sans-serif;
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+.subdrop-kitanotacao ul li h1 {
+    background: #FFCCEE;
+    color: #290019;
+    display: block;
+    padding: 10px 20px;
+    font-size: 28px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.kitanotacao:hover .subdrop-kitanotacao {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 100%;
+}
+
+.subdrop-plannerspers {
+    display: none;
+}
+
+.subdrop-plannerspers ul li a {
+    background: #FFCCEE;
+    color: #841C5C;
+    display: block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: "Nunito", sans-serif;
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+.subdrop-plannerspers ul li h1 {
+    background: #FFCCEE;
+    color: #290019;
+    display: block;
+    padding: 10px 20px;
+    font-size: 28px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.plannerspers:hover .subdrop-plannerspers {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 100%;
+}
+
+.subdrop-agendaspers {
+    display: none;
+}
+
+.subdrop-agendaspers ul li a {
+    background: #FFCCEE;
+    color: #841C5C;
+    display: block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: "Nunito", sans-serif;
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+.subdrop-agendaspers ul li h1 {
+    background: #FFCCEE;
+    color: #290019;
+    display: block;
+    padding: 10px 20px;
+    font-size: 28px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.agendaspers:hover .subdrop-agendaspers {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 100%;
+}
+
+.subdrop-cadernospers {
+    display: none;
+}
+
+.subdrop-cadernospers ul li a {
+    background: #FFCCEE;
+    color: #841C5C;
+    display: block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: "Nunito", sans-serif;
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+.subdrop-cadernospers ul li h1 {
+    background: #FFCCEE;
+    color: #290019;
+    display: block;
+    padding: 10px 20px;
+    font-size: 28px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.cadernospers:hover .subdrop-cadernospers {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 100%;
+}
+
+.subdrop-personagens {
+    display: none;
+}
+
+.subdrop-personagens ul li a {
+    background: #FFCCEE;
+    color: #841C5C;
+    display: block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: "Nunito", sans-serif;
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+.subdrop-personagens ul li h1 {
+    background: #FFCCEE;
+    color: #290019;
+    display: block;
+    padding: 10px 20px;
+    font-size: 28px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.personagens:hover .subdrop-personagens {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 100%;
+}
+
+.subdrop-utilidades {
+    display: none;
+}
+
+.subdrop-utilidades ul li a {
+    background: #FFCCEE;
+    color: #841C5C;
+    display: block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: "Nunito", sans-serif;
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+.subdrop-utilidades ul li h1 {
+    background: #FFCCEE;
+    color: #290019;
+    display: block;
+    padding: 10px 20px;
+    font-size: 28px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.utilidades:hover .subdrop-utilidades {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 100%;
+}
+
+.subdrop-miniaturas {
+    display: none;
+}
+
+.subdrop-miniaturas ul li a {
+    background: #FFCCEE;
+    color: #841C5C;
+    display: block;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: "Nunito", sans-serif;
+    font-weight: 400;
+    white-space: nowrap;
+}
+
+.subdrop-miniaturas ul li h1 {
+    background: #FFCCEE;
+    color: #290019;
+    display: block;
+    padding: 10px 20px;
+    font-size: 28px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    white-space: nowrap;
+}
+
+.miniaturas:hover .subdrop-miniaturas {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 100%;
+}
+
+.papelaria, .casa, .kits, .personalizados, .impressao {
+    z-index: 20;
+}
