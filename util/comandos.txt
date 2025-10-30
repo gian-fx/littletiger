@@ -11,7 +11,7 @@ Criar uma pasta para o projeto e rodar no cmd:
             "App\\": "app/"
         }
 
-#Criar uma pasta public com um index.php dentro
+#Criar uma pasta public com um index.php dentro e pastas e arquivos css, js e img
 
 #Iniciar o servidor do PHP:
     php -S localhost:8000 -t public
